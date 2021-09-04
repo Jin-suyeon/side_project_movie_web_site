@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import styled from "styled-components";
 
 const ToggleContainer = styled.div`
@@ -7,7 +6,7 @@ const ToggleContainer = styled.div`
 
   > .toggle-container {
     width: 40px;
-    height: 20px;
+    height: 18px;
     border-radius: 30px;
     background-color: gainsboro;
     &.toggle--checked {
@@ -24,13 +23,13 @@ const ToggleContainer = styled.div`
     position: absolute;
     top: 1px;
     left: 1px;
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     background-color: rgb(26, 26, 26);
     &.toggle--checked {
       transition: all 0.5s ease-in-out;
-      left: 21px;
+      left: 23px;
     }
     &.toggle--unChecked {
       transition: all 0.5s ease-in-out;
@@ -39,13 +38,7 @@ const ToggleContainer = styled.div`
   }
 `;
 
-function Toggle() {
-  const [isOn, setisOn] = useState(false);
-
-  const toggleHandler = () => {
-    setisOn(!isOn);
-  };
-
+function Toggle({ isOn, toggleHandler }) {
   return (
     <div>
       <ToggleContainer onClick={toggleHandler}>

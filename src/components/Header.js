@@ -3,7 +3,7 @@ import "../styles/Header.css";
 import { Link } from "react-router-dom";
 import Toggle from "./Toggle";
 
-function Header() {
+function Header({ isOn, toggleHandler }) {
   return (
     <header>
       <div id="header_in">
@@ -12,8 +12,9 @@ function Header() {
             <span id="header_logo">WATFLIX</span>
           </Link>
           <span id="header_toggle">
-            <Toggle />
+            <Toggle isOn={isOn} toggleHandler={toggleHandler} />
           </span>
+          <span className="close">+</span>
         </div>
 
         <div id="header_back">
