@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-componets";
+import React, { useState } from "react";
+import styled from "styled-components";
 
 const ToggleContainer = styled.div`
   position: relative;
@@ -12,7 +12,6 @@ const ToggleContainer = styled.div`
     height: 24px;
     border-radius: 30px;
     background-color: #8b8b8b;
-    // TODO : .toggle--checked 클래스가 활성화 되었을 경우의 CSS를 구현합니다.
     &.toggle--checked {
       background-color: #4000c7;
       transition: all 1s ease-in-out;
@@ -31,7 +30,6 @@ const ToggleContainer = styled.div`
     height: 22px;
     border-radius: 50%;
     background-color: #ffffff;
-    // TODO : .toggle--checked 클래스가 활성화 되었을 경우의 CSS를 구현합니다.
     &.toggle--checked {
       transition: all 0.5s ease-in-out;
       left: 27px;
@@ -44,11 +42,25 @@ const ToggleContainer = styled.div`
 `;
 
 function Toggle() {
+  const [isOn, setisOn] = useState(false);
+
+  const toggleHandler = () => {
+    setisOn(!isOn);
+  };
+
   return (
     <div>
-      <ToggleContainer>
-        <div></div>
-        <div></div>
+      <ToggleContainer onClick={toggleHandler}>
+        <div
+          className={`toggle-container ${
+            isOn ? "toggle--checked" : "toggle--unChecked"
+          }`}
+        />
+        <div
+          className={`toggle-circle ${
+            isOn ? "toggle--checked" : "toggle--unChecked"
+          }`}
+        />
       </ToggleContainer>
     </div>
   );

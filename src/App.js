@@ -8,20 +8,22 @@ import { useEffect, useState } from "react";
 import Loading from "./components/Loading";
 
 function App() {
-  const [main, setMain] = useState(false);
+  // const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setMain(false);
-      setMain(true);
-    }, 3000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setIsLoading(true);
+  //   }, 3000);
+  // }, []);
+
   return (
     <BrowserRouter>
-      {main ? <Header /> : null}
+      <Header />
+      {/* {isLoading ? <Header /> : null} */}
       <Switch>
         <Route exact path="/">
-          {main ? <Main /> : <Loading />}
+          <Main />
+          {/* {isLoading ? <Main /> : <Loading />} */}
         </Route>
 
         <Route exact path="/login">

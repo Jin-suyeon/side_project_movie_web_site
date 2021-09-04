@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Header.css";
 import { Link } from "react-router-dom";
+import Toggle from "./Toggle";
 
 function Header() {
   return (
@@ -10,7 +11,9 @@ function Header() {
           <Link to="/">
             <span id="header_logo">WATFLIX</span>
           </Link>
-          <span id="header_toggle">토글</span>
+          <span id="header_toggle">
+            <Toggle />
+          </span>
         </div>
 
         <div id="header_back">

@@ -10,30 +10,23 @@
   align-items: center;
   position: absolute;
   z-index: 2;
-  top: 350px;
+  top: 300px;
 }
 
-#main_text > span {
+#main_title {
   font-size: 60px;
   margin-bottom: 30px;
   font-weight: 700;
   color: white;
 }
 
-#main_text > button {
-  width: 300px;
+#main_story {
+  text-align: center;
+  width: 70%;
   height: 50px;
-  border-radius: 25px;
-  color: rgb(40, 40, 40);
-  font-size: 20px;
-  font-weight: 800;
-  border: none;
-  cursor: pointer;
-  background-color: white;
-}
-
-#main_text > button:active {
-  transform: scale(1.02);
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 #main_Banner_black_opacity {

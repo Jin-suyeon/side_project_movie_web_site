@@ -1,0 +1,34 @@
+.favorite {
+  display: flex;
+  padding: 20px;
+  background-color: rgb(26, 26, 26);
+}
+
+.favorite_in {
+  width: 100%;
+  /* background-color: yellow; */
+}
+
+.favorite_title {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.favorite_img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.favorite_star {
+  color: rgb(255, 196, 0);
+  font-size: 26px;
+  position: absolute;
+  padding: 8px;
+}
+
+.favorite_icon:hover {
+  color: rgb(255, 153, 0);
+  cursor: pointer;
+}
