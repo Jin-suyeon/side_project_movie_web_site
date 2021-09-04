@@ -3,21 +3,19 @@ import styled from "styled-components";
 
 const ToggleContainer = styled.div`
   position: relative;
-  margin-top: 8rem;
-  left: 47%;
   cursor: pointer;
 
   > .toggle-container {
-    width: 50px;
-    height: 24px;
+    width: 40px;
+    height: 20px;
     border-radius: 30px;
-    background-color: #8b8b8b;
+    background-color: gainsboro;
     &.toggle--checked {
-      background-color: #4000c7;
+      background-color: rgb(74, 74, 74);
       transition: all 1s ease-in-out;
     }
     &.toggle--unChecked {
-      background-color: #8b8b8b;
+      background-color: gainsboro;
       transition: all 0.5s ease-in-out;
     }
   }
@@ -26,13 +24,13 @@ const ToggleContainer = styled.div`
     position: absolute;
     top: 1px;
     left: 1px;
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: rgb(26, 26, 26);
     &.toggle--checked {
       transition: all 0.5s ease-in-out;
-      left: 27px;
+      left: 21px;
     }
     &.toggle--unChecked {
       transition: all 0.5s ease-in-out;
