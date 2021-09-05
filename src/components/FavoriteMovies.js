@@ -10,8 +10,9 @@ function FavoriteMovies({ isOn }) {
   };
 
   const target = (e) => {
-    console.log(posterEl.current);
+    console.log(posterEl.cureent);
     const src = posterEl.current.currentSrc.slice(22);
+    // const src = posterEl.current.currentSrc;
     console.log(src);
   };
 

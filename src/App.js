@@ -1,6 +1,6 @@
 // /* eslint-disable */
 import "./App.css";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Header from "./components/Header";
 import Main from "./pages/Main";
 import SiginIn from "./pages/SiginIn";
