@@ -5,43 +5,71 @@
 }
 
 #main_text {
+  position: absolute;
+  width: 100%;
+  height: 800px;
+  z-index: 3;
+  top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+#main_text_change {
   position: absolute;
-  z-index: 2;
-  top: 300px;
+  width: 100%;
+  height: 800px;
+  z-index: 3;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(26, 26, 26);
 }
 
 #main_title {
   font-size: 60px;
   margin-bottom: 30px;
   font-weight: 700;
-  color: white;
 }
 
 #main_story {
   text-align: center;
   width: 70%;
   height: 50px;
-  color: white;
   font-size: 16px;
   font-weight: 400;
 }
 
 #main_Banner_black_opacity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  top: 60;
+  z-index: 2;
+  top: 60px;
   width: 100%;
   height: 800px;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.377);
 }
 
 #main_Banner_img {
-  position: relative;
   width: 100%;
   height: 800px;
-  object-fit: cover;
-  z-index: 0;
+  background-image: url("../img/Main_Banner.jpeg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(70%);
+}
+
+#main_Banner_img_change {
+  width: 100%;
+  height: 800px;
+  background-image: url("../img/Main_Banner.jpeg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(100%);
 }

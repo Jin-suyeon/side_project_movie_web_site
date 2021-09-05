@@ -4,6 +4,12 @@
   background-color: rgb(26, 26, 26);
 }
 
+.favorite_change {
+  display: flex;
+  padding: 20px;
+  background-color: white;
+}
+
 .favorite_in {
   width: 100%;
   /* background-color: yellow; */
@@ -11,6 +17,13 @@
 
 .favorite_title {
   color: white;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.favorite_title_change {
+  color: rgb(26, 26, 26);
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 20px;

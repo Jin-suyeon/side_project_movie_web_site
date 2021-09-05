@@ -13,6 +13,8 @@ function App() {
   //! 토글 버튼
   const [isOn, setisOn] = useState(false);
 
+  console.log(isOn);
+
   useEffect(() => {
     scrollStop();
     setTimeout(() => {
@@ -41,10 +43,12 @@ function App() {
   return (
     <BrowserRouter>
       {isLoading ? <Loading /> : null}
+
       <Header isOn={isOn} toggleHandler={toggleHandler} />
+
       <Switch>
         <Route exact path="/">
-          <Main />
+          <Main isOn={isOn} />
         </Route>
 
         <Route exact path="/login">

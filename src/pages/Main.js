@@ -2,11 +2,11 @@ import React from "react";
 import FavoriteMovies from "../components/FavoriteMovies";
 import "../styles/Main.css";
 
-function Main() {
+function Main({ isOn }) {
   return (
     <main>
       <div id="main_in">
-        <div id="main_text">
+        <div id={isOn ? "main_text" : "main_text_change"}>
           <div id="main_title">스타워즈: 라이즈 오브 스카이워커</div>
           <div id="main_story">
             더욱 강력해진 포스로 돌아온 ‘레이’는 전 우주를 어둠의 힘으로
@@ -21,10 +21,10 @@ function Main() {
             전쟁을 끝내고 새로운 전설로 탄생할 선택받은 영웅은 누가 될 것인가?!
           </div>
         </div>
-        <div id="main_Banner_black_opacity" />
-        <img id="main_Banner_img" src="./Main_Banner.jpeg" alt="" />
+        {isOn ? null : <div id="main_Banner_black_opacity" />}
+        <div id={isOn ? "main_Banner_img" : "main_Banner_img_change"} />
       </div>
-      <FavoriteMovies />
+      <FavoriteMovies isOn={isOn} />
     </main>
   );
 }
