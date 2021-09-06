@@ -8,56 +8,30 @@ import { useEffect, useState } from "react";
 import SignIn from "./pages/SigIn";
 import Loading from "./components/Loading";
 
-// import Loading from "./components/Loading";
-
 function App() {
-  // 로그인 스테이트
+  //! state
   const [isLogin, setIsLogin] = useState(false);
-  // 회원가입 스테이트
   const [isSignUp, setIsSignUp] = useState(false);
-  // 로딩 스테이트
   const [isLoading, setIsLoading] = useState(true);
-  // 토글 버튼
   const [isOn, setisOn] = useState(false);
 
+  //! useEffect
   useEffect(() => {
-    scrollStopLoading();
+    scrollStop();
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 3000);
     // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
-    scrollStopLogin();
+    scrollStop();
     // eslint-disable-next-line
-  }, [isLogin]);
+  }, [isLogin, isSignUp, isLoading]);
 
-  useEffect(() => {
-    scrollStopLoading();
-    // eslint-disable-next-line
-  }, [isLoading]);
-
-  useEffect(() => {
-    scrollStopSignUp();
-    // eslint-disable-next-line
-  }, [isSignUp]);
-
-  const scrollStopLogin = () => {
-    isLogin
-      ? (document.body.style.overflow = "hidden")
-      : (document.body.style.overflow = "unset");
-  };
-
-  const scrollStopSignUp = () => {
-    isSignUp
-      ? (document.body.style.overflow = "hidden")
-      : (document.body.style.overflow = "unset");
-  };
-
-  //! 로딩중일 때는 스크롤 안되게, 로딩 끝나면 스크롤이 되게하는 함수
-  const scrollStopLoading = () => {
-    isLoading
+  // //! 함수
+  const scrollStop = () => {
+    isLogin || isSignUp || isLoading
       ? (document.body.style.overflow = "hidden")
       : (document.body.style.overflow = "unset");
   };
@@ -76,9 +50,11 @@ function App() {
     setIsSignUp(false);
   };
 
+  //! 리턴
   return (
     <BrowserRouter>
       {isLoading ? <Loading /> : null}
+
       {isSignUp ? (
         <SignUp
           SignUpInLogin={SignUpInLogin}
@@ -86,6 +62,7 @@ function App() {
           setIsSignUp={setIsSignUp}
         />
       ) : null}
+
       {isLogin ? (
         <SignIn
           LoginInSignUp={LoginInSignUp}
@@ -93,6 +70,7 @@ function App() {
           setIsLogin={setIsLogin}
         />
       ) : null}
+
       <Header
         isOn={isOn}
         toggleHandler={toggleHandler}
@@ -105,14 +83,6 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Main isOn={isOn} />
-        </Route>
-
-        {/* <Route exact path="/login">
-          <SigIn />
-        </Route> */}
-
-        <Route exact path="/signUp">
-          <SignUp />
         </Route>
       </Switch>
     </BrowserRouter>
