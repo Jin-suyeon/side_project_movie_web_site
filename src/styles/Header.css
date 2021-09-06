@@ -41,14 +41,14 @@
   font-weight: 800;
   font-size: 20px;
   cursor: pointer;
-  color: white;
+  color: var(--yellow-color);
 }
 
 #header_logo_change {
   font-weight: 800;
   font-size: 20px;
   cursor: pointer;
-  color: rgb(26, 26, 26);
+  color: var(--deep--grey);
 }
 
 #header_toggle {

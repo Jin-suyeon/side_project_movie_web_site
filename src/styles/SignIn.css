@@ -1,2 +1,214 @@
-#SignIn {
+.SignIn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  background-color: rgba(0, 0, 0, 0.733);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.SignUp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  background-color: rgba(0, 0, 0, 0.733);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.SignIn_in {
+  width: 370px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: var(--deep--grey);
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.872);
+}
+
+.SignIn_title {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 40px 0;
+}
+
+.SignIn_in > input {
+  width: 100%;
+  height: 36px;
+  border-radius: 20px;
+  border: 2px solid var(--yellow-color);
+  margin-bottom: 20px;
+  padding-left: 15px;
+  outline: none;
+  background-color: var(--deep--grey);
+  color: white;
+}
+
+.SignIn_in > input::placeholder {
+  color: white;
+}
+
+.SignIn_in > input:focus {
+  box-shadow: 0 0 0 2px var(--yellow-color);
+  border: 2px solid rgba(128, 128, 128, 0);
+}
+
+.SignIn_forgot {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.SignIn_forgot_checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.SignUp_forgot_checkbox {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  font-size: 13px;
+}
+
+.SignIn_forgot_checkbox > input {
+  margin-right: 5px;
+}
+
+.SignUp_forgot_checkbox > input {
+  margin-right: 5px;
+}
+
+.SignUp_forgot_checkbox > span {
+  margin-right: 5px;
+  color: var(--yellow-color);
+  font-weight: 600;
+}
+
+.SignUp_forgot_checkbox > label {
+  margin-right: 5px;
+}
+
+/*! 기본 체크박스 변경 */
+input[type="checkbox"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  height: 14px;
+  width: 14px;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 3px;
+}
+
+input[type="checkbox"]:checked {
+  background: var(--yellow-color);
+}
+
+input[type="checkbox"]:after {
+  content: "";
+  position: relative;
+  left: 40%;
+  top: 20%;
+  width: 15%;
+  height: 40%;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  display: none;
+}
+
+input[type="checkbox"]:checked:after {
+  display: block;
+}
+
+/* input.dry[type="checkbox"] {
+  filter: hue-rotate(-0.12turn) saturate(2);
+} */
+/*! 기본 체크박스 변경 */
+
+.SignIn_forgot_checkbox > label {
+  font-size: 13px;
+}
+
+.SignIn_forgot_password {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--yellow-color);
+  cursor: pointer;
+}
+
+.SignIn_button {
+  background-color: var(--yellow-color);
+  border: none;
+  width: 100%;
+  height: 36px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+
+.SignIn_button:active {
+  transform: scale(0.98);
+}
+
+.SignIn_sub_text {
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.SignIn_icon_container {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.SignIn_signup {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.SignIn_signup > span:nth-child(2) {
+  font-weight: 600;
+  color: var(--yellow-color);
+  cursor: pointer;
+}
+
+.SignUp_login {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.SignUp_login > span:nth-child(2) {
+  font-weight: 600;
+  color: var(--yellow-color);
+  cursor: pointer;
 }

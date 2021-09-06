@@ -4,3 +4,8 @@
   margin: 0;
   text-decoration: none;
 }
+
+:root {
+  --deep--grey: rgb(26, 26, 26);
+  --yellow-color: rgb(255, 187, 0);
+}

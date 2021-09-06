@@ -1,4 +1,3 @@
-import React from "react";
 import FavoriteMovies from "../components/PopularMovies";
 import "../styles/Main.css";
 

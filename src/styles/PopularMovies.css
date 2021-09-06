@@ -40,7 +40,7 @@
 }
 
 .favorite_star {
-  color: rgb(255, 196, 0);
+  color: var(--yellow-color);
   font-size: 26px;
   position: absolute;
   padding: 8px;
