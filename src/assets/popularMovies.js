@@ -1,6 +1,6 @@
 export const popularMovies = {
   movies: [
-    { id: 1, img: "./poster.jpeg", title: "Fight Club" },
+    { id: 1, img: "./poster.jpeg1", title: "Fight Club" },
     { id: 2, img: "./poster.jpeg", title: "Fight Club" },
     { id: 3, img: "./poster.jpeg", title: "Fight Club" },
     { id: 4, img: "./poster.jpeg", title: "Fight Club" },
