@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Header from "./components/Header";
 import Main from "./pages/Main";
-import SiginIn from "./pages/SiginIn";
+import SigIn from "./pages/SigIn";
 import SignUp from "./pages/SignUp";
 import { useEffect, useState } from "react";
 import Loading from "./components/Loading";
@@ -52,7 +52,7 @@ function App() {
         </Route>
 
         <Route exact path="/login">
-          <SiginIn />
+          <SigIn />
         </Route>
 
         <Route exact path="/signUp">
