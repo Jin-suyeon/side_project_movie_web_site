@@ -3,10 +3,10 @@ import "./App.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Main from "./pages/Main";
-import SignUp from "./pages/SignUp";
 import { useEffect, useState } from "react";
-import SignIn from "./pages/SigIn";
 import Loading from "./components/Loading";
+import SignUp from "./pages/SignUp";
+import SignIn from "./pages/SigIn";
 
 function App() {
   //! state
@@ -78,6 +78,8 @@ function App() {
         setIsLogin={setIsLogin}
         isSignUp={isSignUp}
         setIsSignUp={setIsSignUp}
+        LoginInSignUp={LoginInSignUp}
+        SignUpInLogin={SignUpInLogin}
       />
 
       <Switch>
