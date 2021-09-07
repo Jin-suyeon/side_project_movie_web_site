@@ -34,6 +34,11 @@ function Headerwhite({
         </div>
 
         <div id="header_back">
+          <Link to="/mypage">
+            <span id={isOn ? "header_SignIn" : "header_SignIn_change"}>
+              마이페이지
+            </span>
+          </Link>
           <span
             onClick={() => loginOpenHandler()}
             id={isOn ? "header_SignIn" : "header_SignIn_change"}

@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import Loading from "./components/Loading";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SigIn";
+import Mypage from "./pages/Mypage";
 
 function App() {
   //! state
@@ -53,7 +54,7 @@ function App() {
   //! 리턴
   return (
     <BrowserRouter>
-      {isLoading ? <Loading /> : null}
+      {/* {isLoading ? <Loading /> : null} */}
 
       {isSignUp ? (
         <SignUp
@@ -85,6 +86,10 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Main isOn={isOn} />
+        </Route>
+
+        <Route exact path="/mypage">
+          <Mypage isOn={isOn} />
         </Route>
       </Switch>
     </BrowserRouter>

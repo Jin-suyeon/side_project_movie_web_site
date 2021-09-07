@@ -31,7 +31,7 @@ function SignUp({ setIsSignUp, isSignUp, SignUpInLogin }) {
         <button className="SignIn_button">Sign up</button>
         <div className="SignUp_login">
           <span>Already have an account?</span>
-          <span onClick={() => SignUpInLogin()}>Sign up</span>
+          <span onClick={() => SignUpInLogin()}>Sign In</span>
         </div>
       </div>
     </div>

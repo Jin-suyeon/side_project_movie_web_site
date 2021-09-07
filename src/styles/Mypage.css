@@ -1,0 +1,158 @@
+.Mypage {
+  color: white;
+}
+
+.Mypage_change {
+  color: var(--deep--grey);
+}
+
+.Mypage_in {
+  width: 100%;
+  display: flex;
+}
+
+.Mypage_Side_bar {
+  width: 300px;
+  height: 100vh;
+  background-color: var(--deep--grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 0 100px 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.187);
+  position: fixed;
+}
+
+.Mypage_Side_bar_change {
+  width: 300px;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 0 100px 0;
+  border-right: 1px solid rgba(131, 131, 131, 0.187);
+  position: fixed;
+}
+
+.Mypage_main_page {
+  width: 100%;
+  min-width: 850px;
+  height: 100vh;
+  overflow-y: auto;
+  margin-left: 300px;
+}
+
+/* .Mypage_main_page::-webkit-scrollbar {
+  height: 100px;
+  width: 12px;
+  background-color: var(--deep--grey);
+}
+
+.Mypage_main_page::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 8px;
+  border: 2px solid var(--deep--grey);
+  height: 100px;
+}
+
+.ypage_main_page::-webkit-scrollbar-track {
+  background-color: rgb(143, 18, 18);
+  padding: 10px;
+} */
+
+.Mypage_profile {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 40px;
+  margin: 40px 0 80px 0;
+}
+
+.Mypage_profile > img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 30px;
+  margin-right: 15px;
+}
+
+.Mypage_profile > div {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.Mypage_menu {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 150px;
+}
+
+.Mypage_menu_change {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 150px;
+}
+
+.Mypage_menu > span {
+  padding: 20px 20px 20px 40px;
+  font-weight: 600;
+}
+
+.Mypage_menu_change > span {
+  padding: 20px 20px 20px 40px;
+  font-weight: 600;
+}
+
+.Mypage_menu > span:hover {
+  background-color: var(--yellow-color);
+  cursor: pointer;
+  color: var(--deep--grey);
+}
+
+.Mypage_menu_change > span:hover {
+  background-color: var(--yellow-color);
+  cursor: pointer;
+  color: white;
+}
+
+.Mypage_logout {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.Mypage_logout_change {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.Mypage_logout > button {
+  width: 80%;
+  height: 40px;
+  background-color: var(--yellow-color);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  color: var(--deep--grey);
+  font-weight: 600;
+}
+
+.Mypage_logout_change > button {
+  width: 80%;
+  height: 40px;
+  background-color: var(--yellow-color);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+}
+
+.Mypage_logout > button:active {
+  transform: scale(0.98);
+}
+
+.Mypage_logout_change > button:active {
+  transform: scale(0.98);
+}

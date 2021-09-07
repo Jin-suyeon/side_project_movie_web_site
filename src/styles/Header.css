@@ -9,6 +9,7 @@
   align-items: center;
   color: white;
   background-color: rgb(26, 26, 26);
+  border-bottom: 1px solid rgba(131, 131, 131, 0);
 }
 
 #header_change {
@@ -22,6 +23,7 @@
   align-items: center;
   color: rgb(26, 26, 26);
   background-color: white;
+  border-bottom: 1px solid rgba(131, 131, 131, 0.187);
 }
 
 #header_front {
@@ -66,37 +68,45 @@
 #header_SignIn {
   margin-right: 30px;
   color: white;
+  font-weight: 600;
+  font-size: 12px;
 }
 
 #header_SignIn_change {
   margin-right: 30px;
   color: rgb(26, 26, 26);
+  font-weight: 600;
+  font-size: 12px;
 }
 
 #header_SignUp {
   color: white;
+  font-weight: 600;
+  font-size: 12px;
 }
 
 #header_SignUp_change {
   color: rgb(26, 26, 26);
+  font-weight: 600;
+  font-size: 12px;
 }
 
 #header_SignIn:hover {
-  color: grey;
+  color: var(--yellow-color);
   cursor: pointer;
 }
 
 #header_SignIn_change:hover {
-  color: grey;
+  color: var(--yellow-color);
   cursor: pointer;
 }
 
 #header_SignUp:hover {
-  color: grey;
+  color: var(--yellow-color);
   cursor: pointer;
 }
 
 #header_SignUp_change:hover {
-  color: grey;
+  color: var(--yellow-color);
   cursor: pointer;
 }

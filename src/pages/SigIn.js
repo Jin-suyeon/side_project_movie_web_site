@@ -25,7 +25,7 @@ function SignIn({ setIsLogin, isLogin, LoginInSignUp }) {
     >
       <div className="SignIn_in">
         <div className="SignIn_title">Log In</div>
-        <input type="text" placeholder="username" />
+        <input type="text" placeholder="Email" />
         <input type="password" placeholder="password" />
         <div className="SignIn_forgot">
           <span className="SignIn_forgot_checkbox">
