@@ -1,5 +1,8 @@
 .Mypagemain {
+  position: relative;
   display: flex;
+  min-height: 100vh;
+  min-width: 800px;
   background: var(--deep--grey);
   background: -webkit-linear-gradient(
     to right,
@@ -15,13 +18,19 @@
   );
   padding: 30px 50px;
   color: white;
+  overflow: overlay;
+  margin-left: 300px;
 }
 
 .Mypagemain_change {
   display: flex;
+  min-width: 800px;
+  min-height: 100vh;
   background: white;
   padding: 30px 50px;
   color: var(--deep--grey);
+  margin-left: 300px;
+  overflow: overlay;
 }
 
 .Mypagemain_in {

@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter, Link, Route } from "react-router-dom";
 import Mypagemain from "../components/Mypagemain";
 import "../styles/Mypage.css";
 
@@ -25,7 +26,7 @@ function Mypage({ isOn }) {
             <button>Logout</button>
           </div>
         </div>
-        <div className="Mypage_main_page">
+        <div>
           <Mypagemain isOn={isOn} />
         </div>
       </div>
